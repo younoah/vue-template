@@ -8,9 +8,12 @@ import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 
 export default {
   computed: {
+    // 일반적인 방식
     // reversedMessage() {
     //   return this.$store.getters['message/reversedMessage'];
     // },
+
+    // vuex의 map 함수 방식
     ...mapGetters('message', ['reversedMessage']),
   },
 };

@@ -1,27 +1,21 @@
 <template>
-  <h1 v-if="msg" class="message" @click="log">
-    {{ msg }}
-  </h1>
-  <Hello />
+  <main>
+    <h1>App.vue</h1>
+    <Hello />
+    <World />
+  </main>
 </template>
 
 <script>
 import Hello from '~/components/Hello';
+import World from '~/components/World';
 
 export default {
   components: {
     Hello,
-  },
-  data() {
-    return {
-      msg: 'Hello Vue!',
-    };
+    World,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-h1 {
-  color: green;
-}
-</style>
+<style lang="scss" scoped></style>
